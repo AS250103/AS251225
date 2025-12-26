@@ -1,0 +1,44 @@
+{
+    "domains": [
+        {
+            "name": "example-airport",
+            "domain": "example.com",
+            "push_to": ["free"]
+        }
+    ],
+    "crawl": {
+        "enable": true,
+        "persist": {
+            "subs": "crawledsubs",
+            "proxies": "crawledproxies"
+        },
+        "github": {
+            "enable": true,
+            "pages": 10,
+            "push_to": ["free"]
+        },
+        "telegram": {
+            "enable": false,
+            "users": {
+                "proxy_channel": {
+                    "push_to": ["free"]
+                }
+            }
+        }
+    },
+    "groups": {
+        "free": {
+            "targets": {"clash": "free-mihomo"}
+        }
+    },
+    "storage": {
+        "engine": "gist",
+        "items": {
+            "free-clash": {
+                "username": "AS250103",
+                "gistid": "424a558447393800f72d086db4cf31b8", 
+                "filename": "mihomo.yaml"
+            }
+        }
+    }
+}
